@@ -87,8 +87,10 @@ a {
 
 .nav-links {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 30px;
+    white-space: nowrap;
 }
 
 .nav-links a {
@@ -110,13 +112,34 @@ a {
     height: 40px;
     cursor: pointer;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}.theme-toggle {
+    border: 1px solid var(--olive);
+    background: transparent;
+    color: var(--forest);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 /* Navigation logo image */
 .navbar .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .navbar .logo img {
