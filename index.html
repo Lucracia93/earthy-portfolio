@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Personal portfolio showcasing skills, education and projects.">
+
+    <title>My Portfolio | Creative Professional</title>
+
+    <link rel="stylesheet" href="style.css">
+  
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+<script src=".js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">Portfolio<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" class="theme-toggle"
+                aria-label="Switch color theme">
+                ☾
+            </button>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+
+        <section id="home" class="hero container">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>
+                    Hello, I'm <span>Lucracia.</span>
+                </h1>
+
+                <h2>IT Professional & Aspiring Developer</h2>
+
+                <p class="hero-description">
+                    I enjoy creating digital solutions, learning new
+                    technologies and turning ideas into meaningful projects.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Me
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+    
+                <div class="hero-image">
+    <img
+        src="C:\Users\oraon\OneDrive\Desktop\Coding\Projects\Earthy Portfolio\Screenshot_20251101_074854_com_android_keyguard_.jpg"
+        alt="My professional portrait"
+        class="profile-photo"
+    >
+</div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section container">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h2>About Me</h2>
+
+            <p>
+                I am a motivated individual with an interest in
+                information technology, software development and
+                continuous learning.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section container">
+            <p class="eyebrow">WHAT I CAN DO</p>
+            <h2>My Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Git & GitHub</div>
+                <div class="skill-card">Technical Support</div>
+                <div class="skill-card">Office Administration</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section container">
+            <p class="eyebrow">MY RECENT WORK</p>
+            <h2>Featured Projects</h2>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-image">PROJECT 01</div>
+                    <div class="project-info">
+                        <h3>Personal Website</h3>
+                        <p>A responsive website built using HTML and CSS.</p>
+                        <a href="#">View Project →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">PROJECT 02</div>
+                    <div class="project-info">
+                        <h3>Interactive Dashboard</h3>
+                        <p>A dashboard demonstrating JavaScript skills.</p>
+                        <a href="#">View Project →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">PROJECT 03</div>
+                    <div class="project-info">
+                        <h3>Coming Soon</h3>
+                        <p>More exciting projects are on the way.</p>
+                        <a href="#">Coming Soon →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+       
+<section id="contact" class="contact">
+    <div class="section-heading">
+        <p class="section-subtitle">GET IN TOUCH</p>
+        <h2>Let's Work Together</h2>
+        <p>
+            Have a project in mind? I'd love to hear from you.
+            Send me a message!
+        </p>
+    </div>
+
+    <form id="contact-form" class="contact-form">
+
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="What is this about?"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Write your message here..."
+                required
+            ></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+            Send Message →
+        </button>
+
+        <p id="form-status" aria-live="polite"></p>
+
+    </form>
+</section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
