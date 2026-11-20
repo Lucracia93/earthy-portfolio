@@ -280,11 +280,14 @@ a {
     margin-bottom: 24px;
     font-weight: 600;
 }
+
 .section > p:not(.eyebrow) {
     max-width: 700px;
     color: var(--muted);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
-
 /* =================================
    6. SKILLS
 ================================= */
